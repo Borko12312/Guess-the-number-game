@@ -1,0 +1,16 @@
+import random
+computer_number = random.randint(1, 100)
+print("|-----GUESS THE NUMBER GAME-----|")
+print("   Put numbers between (1-100)")
+number = int(input())
+while True:
+
+    if number != computer_number:
+      if number > computer_number:
+         print("Too high!")
+      elif number < computer_number:
+         print("Too low!")
+      number = int(input())
+    else:
+        print("Congratulations! You have guessed it!")
+        break
